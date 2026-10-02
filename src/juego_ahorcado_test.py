@@ -15,11 +15,12 @@ def test_enmascarar():
     assert enmascarar("prueba", "prueba") == "prueba"
 
 def test_ha_ganado():
-    # TODO: Implementa esta función (y elimina la instrucción pass)
-    pass
+    assert ha_ganado("python") == True
+    ha_ganado("p____n") == False
+    ha_ganado("______") == False
 
 
 test_normalizar()
-#test_enmascarar()
-#test_ha_ganado()
+test_enmascarar()
+test_ha_ganado()
 print("✅ Todas las pruebas han pasado correctamente.")
